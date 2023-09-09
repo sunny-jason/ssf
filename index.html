@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		p {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		ul,
+		li {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.box {
+			width: 600px;
+			background-color: pink;
+			height: 600px;
+			margin: 0 auto;
+
+		}
+
+		.box .left {
+			width: 200px;
+			/* background-color: blue; */
+			height: 600px;
+			float: left;
+		}
+
+		.box .left .img {
+			width: 100%;
+			height: 200px;
+			/* background-color: antiquewhite; */
+			box-sizing: border-box;
+			padding: 50px;
+		}
+
+		.box .left .img .simg {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			border: 1px solid black;
+			overflow: hidden;
+
+		}
+
+		.box .left .img .simg img {
+			width: 100%;
+			height: 100%;
+		}
+
+		.box .left .img p {
+			text-align: center;
+		}
+
+		.box .left .ul {
+			width: 100%;
+			height: 400px;
+			/* background-color: red; */
+		}
+
+		.box .left .ul ul {
+			height: 400px;
+			width: 100%;
+		}
+
+		.box .left .ul ul li {
+			height: 50px;
+			width: 100%;
+			border-bottom: 1px solid black;
+			box-sizing: border-box;
+			padding: 20px;
+			font-size: 16px;
+			font-weight: bold;
+			font-family: 'Courier New', Courier, monospace;
+			/* color: pink; */
+		}
+
+		.box .right {
+			width: 400px;
+			/* background-color: yellow; */
+			height: 600px;
+			float: left;
+			padding-top: 30px;
+			box-sizing: border-box;
+			background-image: url(./images/bg.jpg);
+			background-size: 100% 100%;
+		}
+
+		.box .right .zwjs {
+			width: 100px;
+			height: 20px;
+			background-color: white;
+			color: red;
+
+			border-radius: 15%;
+			text-align: center;
+			font-weight: bold;
+
+		}
+
+		.box .right .content {
+			margin-top: 20px;
+			/* background-color: green; */
+			height: 300px;
+			padding: 5px;
+		}
+
+		.box .right .content p {
+			text-indent: 2em;
+		}
+
+		.box .right .bottom {
+			height: 200px;
+			/* background-color: blue; */
+		}
+		.box .right .bottom .btu{
+			height: 200px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.box .right .bottom .btu .btl {
+			height: 100px;
+			width: 100px;
+			
+			
+		}
+		.box .right .bottom .btu .btl >img{
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box">
+		<div class="left">
+			<div class="img">
+				<div class="simg">
+					<img src="./images/1.jpg" alt="">
+				</div>
+				<p>自我介绍</p>
+			</div>
+			<div class="ul">
+				<ul>
+					<li>姓名:王世清</li>
+					<li>性别：男</li>
+					<li>民族：汉</li>
+					<li>爱好：躺平</li>
+					<li style="height: 200px; ">
+						<img src="./images/gx.gif" alt="" width="150px" height="150px">
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="right">
+			<div class="zwjs">自我介绍</div>
+			<div class="content">
+				<p>本人性格开朗、稳重、有活力，待人热情、真诚。
+					有很强的专业的职业道德，专业基础知识扎实。
+					工作认真负责，主动承担责任，
+					积极与周围工作环境建立良好的工作关系，
+					并具有一定的资源协调能力。
+					与同事，其它部门各极配合，
+					有较强的组织能力、实际动手能力和团体协作精神。
+					能迅速的适应各种环境，并融合其中。
+
+				</p>
+			</div>
+			<div class="bottom">
+				<ul class="btu">
+					<li class="btl"><img src="./images/f1.jpg" alt=""></li>
+					<li class="btl"><img src="./images/f2.jpg" alt=""></li>
+					<li class="btl"><img src="./images/f3.jpg" alt=""></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
